@@ -8,6 +8,8 @@ function Navbar() {
     const [button, setButton] = useState(true)
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    const openLinkedin = () => window.location.href="https://www.linkedin.com/in/anishabhat/";
+    const openGithub = () => window.location.href="https://github.com/anishasbhat";
 
     const showButton = () => {
         if(window.innerWidth <= 960) {
@@ -36,8 +38,8 @@ function Navbar() {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            Home
+                        <Link to='/' className='nav-links' onClick={openLinkedin}>
+                            Linkedin
                         </Link>
                     </li>
 
@@ -48,8 +50,8 @@ function Navbar() {
                     </li>
 
                     <li className='nav-item'>
-                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                            Projects
+                        <Link to='/projects' className='nav-links' onClick={openGithub}>
+                            Github
                         </Link>
                     </li>
 
