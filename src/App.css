@@ -17,16 +17,25 @@
 }
 
 .face {
-  width: 300px;
-  height: 300px;
-
+  width: 280px;
+  height: 280px;
   padding-top: 40px;
-  padding-left: 10px;
-  padding-right: 40px;
+  padding-left: 40px;
   float: left;
 }
 
 .home-text {
-  padding-left: 90px;
-  padding-top: 90px;
+  padding-left: 320px;
+  padding-top: 40px;
+  /*float: left;*/
+}
+
+.subtext
+{
+  color:rgb(154, 208, 240);
+}
+
+.para
+{
+  color:rgba(31, 36, 37, 0.884);
 }
